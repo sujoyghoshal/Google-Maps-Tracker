@@ -21,7 +21,6 @@ This project is a real-time location tracking system built with **Node.js**, **E
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) installed.
-- Google Maps API Key (optional, if you want to use your own key).
 
 ### Installation
 
@@ -30,14 +29,3 @@ This project is a real-time location tracking system built with **Node.js**, **E
    ```bash
   https://github.com/sujoyghoshal/Google-Maps-Tracker.git
 
-
-.
-├── public
-│   ├── js
-│   │   └── main.js          # Client-side JavaScript with Socket.IO
-│   └── css
-│       └── style.css        # Custom styles
-├── views
-│   └── index.ejs            # EJS template for the homepage
-├── server.js                # Node.js server with Socket.IO
-└── package.json             # Project metadata and dependencies
