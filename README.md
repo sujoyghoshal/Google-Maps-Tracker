@@ -23,9 +23,6 @@ This project is a real-time location tracking system built with **Node.js**, **E
 - [Node.js](https://nodejs.org/) installed.
 
 ### Installation
-
-1. Clone the repository:
-
-   ```bash
   https://github.com/sujoyghoshal/Google-Maps-Tracker.git
+
 
