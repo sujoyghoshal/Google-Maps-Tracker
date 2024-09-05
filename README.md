@@ -61,7 +61,7 @@ The source code for this project is available at [Your GitHub Repository URL].
 
 ### Application Screenshot
 
-![Vehicle Tracking System](./project.png height="200px")
+![Vehicle Tracking System](project.png)
 
 ## Contact
 
