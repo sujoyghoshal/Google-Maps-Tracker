@@ -12,7 +12,6 @@ document.getElementById("startRoute").addEventListener("click", async () => {
         const toCoords = await getCoordinates(to);
 
         if (fromCoords && toCoords) {
-            // Send route data to the server to broadcast to all users
             socket.emit("send-route", { fromCoords, toCoords });
             calculateRoute(fromCoords, toCoords);
         } else {
@@ -36,7 +35,7 @@ async function getCoordinates(location) {
         return [parseFloat(lat), parseFloat(lon)];
     }
 
-    return null; // Return null if the location is not found
+    return null;
 }
 
 function calculateRoute(fromCoords, toCoords) {
@@ -56,7 +55,7 @@ function calculateRoute(fromCoords, toCoords) {
         const route = e.routes[0];
         setTimeout(() => {
             moveCar(route.coordinates);
-        }, 3000); // 3 second delay before moving the car
+        }, 3000);
     });
 }
 
@@ -99,7 +98,6 @@ socket.on("update-car-on-map", (data) => {
     }
 });
 
-// Initialize map if not already set
 if (!map) {
     map = L.map("map").setView([20.5937, 78.9629], 5); // Default view over India
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {

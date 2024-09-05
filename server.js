@@ -6,7 +6,7 @@ const http = require('http');
 require('dotenv').config();
 app.use(express.static('./public'))
 
-// Socket connection setup
+
 const socketio = require('socket.io');
 const server = http.createServer(app);
 const io = socketio(server);
@@ -15,12 +15,10 @@ io.on('connection', (socket) => {
     console.log("User connected:", socket.id);
 
     socket.on("send-route", (data) => {
-        // Broadcast the route to all other connected users
         socket.broadcast.emit('receive-route', data);
     });
 
     socket.on("update-car-position", (data) => {
-        // Broadcast car position to all other connected users
         socket.broadcast.emit('update-car-on-map', data);
     });
 
