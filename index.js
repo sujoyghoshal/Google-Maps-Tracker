@@ -27,7 +27,7 @@ io.on('connection', (socket) => {
     });
 });
 
-// EJS connection
+//EJS connection
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -35,7 +35,7 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
-// Server listen
+//Server listen
 server.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
