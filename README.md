@@ -51,14 +51,14 @@ Ensure you have the following installed:
 3. **Run the Application**
 
     ```bash
-    nodemon server.js or node server.js
+    nodemon index.js or node index.js
     ```
 
     Navigate to `http://localhost:3000` in your web browser to view the application.
 
 ## Hosted Link
 
-You can view the hosted version of the project at [Your Hosted Project URL].
+You can view the hosted version of the project at [404].
 
 ## GitHub Repository
 
