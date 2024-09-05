@@ -1,9 +1,12 @@
 {
   "name": "real-time-order-tracking",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
