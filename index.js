@@ -11,7 +11,7 @@ const socketio = require('socket.io');
 const server = http.createServer(app);
 const io = socketio(server);
 
-io.on('connection', (socket) => {
+io.on('connection', (socket) => { 
     console.log("User connected:", socket.id);
 
     socket.on("send-route", (data) => {
