@@ -62,7 +62,7 @@ You can view the hosted version of the project at [Your Hosted Project URL].
 
 ## GitHub Repository
 
-The source code for this project is available at [Your GitHub Repository URL].
+The source code for this project is available at [https://github.com/sujoyghoshal/Google-Maps-Tracker].
 
 ## Contact
 
