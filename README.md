@@ -1,5 +1,12 @@
 # Vehicle Tracking System
 
+## Screenshots
+
+### Application Screenshot
+
+![Vehicle Tracking System](project.png)
+
+
 ## Overview
 
 The Vehicle Tracking System is a web application developed using Node.js and EJS. It integrates with the Google Maps API to provide dynamic route tracking between two user-input locations. The application simulates a vehicle moving along the calculated route, offering a real-time visualization of the journey.
@@ -56,12 +63,6 @@ You can view the hosted version of the project at [Your Hosted Project URL].
 ## GitHub Repository
 
 The source code for this project is available at [Your GitHub Repository URL].
-
-## Screenshots
-
-### Application Screenshot
-
-![Vehicle Tracking System](project.png)
 
 ## Contact
 
