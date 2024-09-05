@@ -55,7 +55,7 @@ function calculateRoute(fromCoords, toCoords) {
         const route = e.routes[0];
         setTimeout(() => {
             moveCar(route.coordinates);
-        }, 3000);
+        }, 1000);
     });
 }
 
