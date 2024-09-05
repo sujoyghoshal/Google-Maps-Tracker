@@ -5,29 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real-Time Tracking</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
     <style>
         body {
             margin: 0;
             padding: 20px;
             box-sizing: border-box;
-            background-color: #f0f0f0;
-            border: 10px solid #333;
-            border-radius: 10px;
             font-family: Arial, sans-serif;
         }
 
         #map {
-            height: calc(100vh - 60px); 
+            height: 500px;
             width: 100%;
-            border: 5px solid #444;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #controls {
+            margin-top: 20px;
+        }
+
+        input {
+            padding: 5px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 5px 10px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
+    <div id="controls">
+        <input type="text" id="from" placeholder="Start location" />
+        <input type="text" id="to" placeholder="End location" />
+        <button id="startRoute">Start Route</button>
+    </div>
+
     <div id="map"></div>
+
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="/js/main.js"></script>
 </body>
